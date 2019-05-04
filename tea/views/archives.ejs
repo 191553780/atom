@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%=result[0].name%>｜商品のご案内｜お茶の思い</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1085852_78uwly4wx6w.css">
+	<link rel="stylesheet" href="stylesheets/archives.css">
+	<link rel="stylesheet" href="stylesheets/bottom.css">
+	<script src="javascripts/jquery-3.3.1.min.js"></script>
+	<script src="javascripts/jquery.mousewheel.min.js"></script>
+</head>
+<body>
+	<script src="separation/header.js"></script>
+	<main>
+		<section>
+			<div class="archives">
+				<div class="archives_img">
+					<div class="img_nav">
+						<p class='img_select'><i></i><span>Package</span></p>
+						<p><i></i><span>How to drink</span></p>
+					</div>
+					<ul>
+						<li><img src="images/<%=result[0].bigimg%>" alt=""></li>
+						<li><img src="images/archives_tip.png" alt=""></li>
+					</ul>
+				</div>
+				<div class="archives_desc">
+					<div class="arch_paginations">
+						<div class="pagination_content">
+							<a class="pagination_left" href="javascript:void(0)">
+								<svg width="15px" height="13px" viewBox="0 0 15 13">
+									<path fill-rule="evenodd" fill="rgb(93, 102, 102)" d="M0.589,5.908 L-0.000,6.499 L0.589,7.090 L0.589,7.156 L0.655,7.156 L6.484,13.001 L7.411,12.072 L2.508,7.156 L15.000,7.156 L15.000,5.842 L2.508,5.842 L7.411,0.926 L6.484,-0.003 L0.655,5.842 L0.589,5.842 L0.589,5.908 Z"></path>
+								</svg>
+							</a>
+							<a href="/products">
+								<div class="container__button__to_list">
+									<span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span> <span></span>
+									<i></i>
+								</div>
+							</a>
+							<a class="pagination_right" href="javascript:void(0)">
+								<svg width="15px" height="13px" viewBox="0 0 15 13">
+									<path fill-rule="evenodd" fill="rgb(93, 102, 102)" d="M0.589,5.908 L-0.000,6.499 L0.589,7.090 L0.589,7.156 L0.655,7.156 L6.484,13.001 L7.411,12.072 L2.508,7.156 L15.000,7.156 L15.000,5.842 L2.508,5.842 L7.411,0.926 L6.484,-0.003 L0.655,5.842 L0.589,5.842 L0.589,5.908 Z"></path>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="desc_content">
+						<div class="desc_inner">
+							<div class="inner_name">
+								<h5><%=result[0].name%></h5>
+								<span><%=result[0].alias%></span>
+								<div class="icon_like">
+									<p class="like_click">
+										<svg width="100%" height="100%" viewBox="0 0 52 52">
+											<path d="M674.867,6446.55a8.956,8.956,0,0,1,5.572,1.99c5.446,4.31,4.915,13.55-1.233,21.48-4.805,6.2-13.08,15.15-17.482,19.82-4.413-4.68-12.712-13.66-17.483-19.82-6.149-7.93-6.679-17.17-1.235-21.48a9.027,9.027,0,0,1,14.3,4.56,4.57,4.57,0,0,0,8.83,0,9.136,9.136,0,0,1,8.73-6.55m0-3.55a12.555,12.555,0,0,0-3.941.64,12.427,12.427,0,0,0-8.216,8.54,1.021,1.021,0,0,1-1.974,0,12.433,12.433,0,0,0-8.216-8.54,12.368,12.368,0,0,0-11.715,2.12c-7.014,5.55-6.742,16.92.631,26.43,6.015,7.77,17.348,19.73,20.287,22.81,2.935-3.07,14.246-15.01,20.287-22.81,7.374-9.51,7.645-20.88.631-26.43a12.468,12.468,0,0,0-7.774-2.76h0Z" transform="translate(-635.719 -6443)"></path>
+										</svg>
+									</p>
+									<p>
+										<svg width="100%" height="100%" viewBox="0 0 52 52">
+											<path d="M683.105,3240.98a12.572,12.572,0,0,0-19.931,6.43,1.024,1.024,0,0,1-1.974,0,12.537,12.537,0,0,0-19.93-6.43c-7.013,5.56-6.742,16.92.631,26.43,6.015,7.77,17.347,19.73,20.286,22.81,2.935-3.07,14.245-15.01,20.287-22.81C689.847,3257.9,690.118,3246.54,683.105,3240.98Z" transform="translate(-636.188 -3238.22)">
+											</path>
+										</svg>
+									</p>	
+								</div>
+							</div>
+							<div class="inner_tags">
+								<ul>
+									<%var tagArr = result[0].tag.split('&')%>
+									<%for(var i=0;i<tagArr.length;i++){%>
+										<li><%=tagArr[i]%></li>
+									<%}%>
+								</ul>
+							</div>
+							<div class="inner_desc">
+								<p><%=result[0].longdepict%></p>
+							</div>
+							<div class="inner_info">
+								<div class="info_text">
+									<p><span>内容量</span><span><%=result[0].capacity%></span></p>
+									<p><span>価格</span><span> ¥<%=result[0].price%> + tax</span></p>
+								</div>
+								<div class="info_img"><img src="images/arch_taste.jpg" alt=""></div>
+							</div>
+							<div class="inner_button">
+								<a href=""><img src="images/arch_pur.png" alt=""></a>
+							</div>
+							<div class="inner_taste">
+								<h6>あじわい</h6>
+								<p><%=result[0].taste%></p>
+							</div>
+							<div class="inner_graph">
+								<img src="images/arch_canvas.png" alt="">
+							</div>
+							<div class="inner_base">
+								<h6>おもなブレンド茶葉</h6>
+								<ul>
+									<li>
+										<p>やぶきた</p>
+										<span><svg width='10' height="8px">
+											<path id="mark__check" fill-rule="evenodd" d="M10.000,2.240 L8.667,0.967 L4.000,5.425 L1.333,2.877 L-0.000,4.151 L2.667,6.698 L2.667,6.698 L4.000,7.972 L5.333,6.698 L5.333,6.698 L10.000,2.240 Z"></path>
+										</svg></span>
+									</li>
+									<li>
+										<p>さえみどり</p>
+										<span>
+											<svg width='10' height="8px">
+												<path id="mark__check" fill-rule="evenodd" d="M10.000,2.240 L8.667,0.967 L4.000,5.425 L1.333,2.877 L-0.000,4.151 L2.667,6.698 L2.667,6.698 L4.000,7.972 L5.333,6.698 L5.333,6.698 L10.000,2.240 Z"></path>
+											</svg>
+										</span>
+									</li>
+									<li>
+										<p>ゆたかみどり</p>
+										<span>
+											<svg width='10' height="8px">
+												<path id="mark__check" fill-rule="evenodd" d="M10.000,2.240 L8.667,0.967 L4.000,5.425 L1.333,2.877 L-0.000,4.151 L2.667,6.698 L2.667,6.698 L4.000,7.972 L5.333,6.698 L5.333,6.698 L10.000,2.240 Z"></path>
+											</svg>
+										</span>
+									</li>
+									<li>
+										<p>あさつゆ</p>
+										<span>
+											<svg width='10' height="8px">
+												<path id="mark__check" fill-rule="evenodd" d="M10.000,2.240 L8.667,0.967 L4.000,5.425 L1.333,2.877 L-0.000,4.151 L2.667,6.698 L2.667,6.698 L4.000,7.972 L5.333,6.698 L5.333,6.698 L10.000,2.240 Z"></path>
+											</svg>
+										</span>
+									</li>
+									<li>
+										<p>あさのか</p>
+										<span>
+											<svg width='10' height="8px">
+												<path id="mark__check" fill-rule="evenodd" d="M10.000,2.240 L8.667,0.967 L4.000,5.425 L1.333,2.877 L-0.000,4.151 L2.667,6.698 L2.667,6.698 L4.000,7.972 L5.333,6.698 L5.333,6.698 L10.000,2.240 Z"></path>
+											</svg>
+										</span>
+									</li>
+									<li>
+										<p>おくみどり</p>
+										<span>
+											<svg width='10' height="8px">
+												<path id="mark__check" fill-rule="evenodd" d="M10.000,2.240 L8.667,0.967 L4.000,5.425 L1.333,2.877 L-0.000,4.151 L2.667,6.698 L2.667,6.698 L4.000,7.972 L5.333,6.698 L5.333,6.698 L10.000,2.240 Z"></path>
+											</svg>
+										</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="arch_car">
+					<div class="car_content">
+						<div class="car_title"></div>
+						<div class="car_list"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</body>
+<script>
+	var cateDate = '<%=result[0].cate.split('&')%>'
+	var cateArr = cateDate.split(',')
+	var cateLi =$('.inner_base>ul>li')
+
+	for(var m=0;m<cateLi.length;m++){
+		for(var n=0;n<cateArr.length;n++){
+			if(n == m){
+				cateLi.eq(m).addClass('selected')
+			}
+		}
+	}
+</script>
+<script src="javascripts/header.js"></script>
+<script src="javascripts/bottom_after.js"></script>
+<script src="javascripts/archives.js"></script>
+</html>

@@ -1,0 +1,23 @@
+/* ======================内容样式开始================ */
+main{width:100%;height:100%;background: url(../images/bg.jpg) no-repeat center 15% ~'/'100% ;background-origin: content-box;padding-right:60px;box-sizing: border-box;
+	.main-left{width:20%;float: left;height:100%;line-height: 100%;box-sizing:border-box;display: none;
+		.main-logo{position:absolute;top:50%;transform: translateY(-50%);left:150px;
+				.logo{transform: scale(1.52);position:static;
+				.word{opacity: 1;color:black;
+					span{opacity: 0;transform: translateX(-20px);transition:.3s;}
+					p{opacity: 0;transform: translateX(-20px);transition:.3s;font-size: 12px;}
+				}
+			}
+		}
+	}
+	.main-right{width:40%;float:right;height:100%;overflow: hidden;position:relative;
+		.dirList{position: absolute;top:50%;transform: translateY(-50%);padding:0;height:auto;width:100%;
+			ul{width: 100%;text-align: center;
+				li{padding:10px 15px 10px 15px;width:45px;}
+			}
+		}
+	}
+	.main-text{width:100%;text-align: center;position: fixed;bottom:12%;line-height: 1.8;transform: translateY(20px);transition: 1s;opacity: 0;
+		h2{font-size:36px;letter-spacing:16px;margin-bottom:20px;}
+	}
+}

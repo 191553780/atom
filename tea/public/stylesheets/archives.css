@@ -1,0 +1,470 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0;
+}
+main {
+  width: 100%;
+  height: auto;
+}
+main section {
+  width: 100%;
+  display: table;
+}
+main section .archives {
+  width: calc(100vw - 60px);
+  max-height: 722.4px;
+  background: #abc;
+}
+main section .archives > div {
+  height: 100%;
+}
+main section .archives .background_one {
+  background-color: #ebb9aa!important;
+  border: 1px solid #ebb9aa;
+}
+main section .archives .background_two {
+  background-color: #dddd6e!important;
+  border: 1px solid #dddd6e;
+}
+main section .archives .background_three {
+  background-color: #c1cb81!important;
+  border: 1px solid #c1cb81;
+}
+main section .archives .background_four {
+  background-color: #a7d2b3!important;
+  border: 1px solid #a7d2b3;
+}
+main section .archives .background_five {
+  background-color: #c0c3da!important;
+  border: 1px solid #c0c3da;
+}
+main section .archives .background_six {
+  background-color: #b6dde3!important;
+  border: 1px solid #b6dde3;
+}
+main section .archives .background_seven {
+  background-color: #e1caa2!important;
+  border: 1px solid #e1caa2;
+}
+main section .archives .archives_img {
+  float: left;
+  width: 61%;
+  overflow: hidden;
+  position: relative;
+}
+main section .archives .archives_img ul {
+  width: 100%;
+}
+main section .archives .archives_img ul li {
+  width: 100%;
+}
+main section .archives .archives_img ul li:nth-of-type(2n) {
+  display: none;
+}
+main section .archives .archives_img ul li img {
+  width: 100%;
+  margin-top: -74px;
+}
+main section .archives .archives_img .img_nav {
+  position: absolute;
+  left: 0;
+  top: 41%;
+  height: 64.47px;
+}
+main section .archives .archives_img .img_nav p {
+  margin: 5px 0;
+  line-height: 1.75em;
+  font-size: 13px;
+  position: relative;
+  transition: all .3s linear;
+  transform: translateX(-15px);
+  cursor: pointer;
+}
+main section .archives .archives_img .img_nav p i {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  margin-right: 10px;
+  border-bottom: 1px solid #c1cb81;
+  height: 1px;
+}
+main section .archives .archives_img .img_nav p span {
+  letter-spacing: .12em;
+}
+main section .archives .archives_img .img_nav p:hover {
+  transform: translateX(-10px);
+}
+main section .archives .archives_img .img_nav .img_select {
+  transform: translateX(0);
+  color: #c1cb81;
+  border-color: #c1cb81;
+}
+main section .archives .archives_img .img_nav .img_select:hover {
+  transform: translateX(0px);
+}
+main section .archives .archives_desc {
+  float: left;
+  width: 39%;
+  padding-top: 55px;
+  position: relative;
+}
+main section .archives .archives_desc .arch_paginations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 55px;
+  width: 100%;
+  padding: 0 10%;
+  background: #fff;
+  z-index: 99;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content a {
+  display: flex;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s linear;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content a:last-child {
+  transform: rotate(180deg);
+}
+main section .archives .archives_desc .arch_paginations .pagination_content a .container__button__to_list {
+  width: 20px;
+  height: 20px;
+  position: relative;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content a .container__button__to_list span {
+  float: left;
+  width: 4px;
+  height: 4px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background-color: #5d6666;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content a .container__button__to_list i {
+  position: absolute;
+  top: -4px;
+  left: 11px;
+  width: 20px;
+  height: 5px;
+  transform: rotate(45deg);
+  transform-origin: top;
+  background: #fff;
+  transition: all .2s linear;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content a .container__button__to_list:hover i {
+  transform: translate(-25px, 22px) rotate(45deg);
+}
+main section .archives .archives_desc .arch_paginations .pagination_content .pagination_left:hover {
+  animation: pagination_left .8s linear;
+}
+main section .archives .archives_desc .arch_paginations .pagination_content .pagination_right:hover {
+  animation: pagination_right .8s linear;
+}
+@keyframes pagination_left {
+  0% {
+    transform: translateX(-5px);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  66% {
+    transform: translateX(0px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-5px);
+    opacity: 1;
+  }
+}
+@keyframes pagination_right {
+  0% {
+    transform: translateX(5px) rotate(180deg);
+    opacity: 1;
+  }
+  33% {
+    transform: translateX(10px) rotate(180deg);
+    opacity: 0;
+  }
+  66% {
+    transform: translateX(0px) rotate(180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(5px) rotate(180deg);
+    opacity: 1;
+  }
+}
+main section .archives .archives_desc .desc_content {
+  padding-top: 92px;
+  width: 55.6%;
+  margin: 0 auto;
+  transition: all .1s;
+  overflow: hidden;
+}
+main section .archives .archives_desc .desc_content .desc_inner {
+  width: calc(100% + 1.2em);
+  height: calc(100vh - 55px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-right: 1.2em;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name {
+  width: 100%;
+  padding-right: 30px;
+  position: relative;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name h5 {
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.6em;
+  letter-spacing: .1em;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name span {
+  font-size: 14px;
+  display: block;
+  line-height: 20px;
+  letter-spacing: .2em;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name .icon_like {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name .icon_like p {
+  display: none;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name .icon_like p svg {
+  fill-rule: evenodd;
+  fill: #dedede;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name .icon_like p:nth-of-type(2n) svg {
+  fill: #dddd6e;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name .icon_like .like_click {
+  display: block;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_name .icon_like:hover {
+  animation: iconLikeHover .4s linear 0s 1;
+}
+@keyframes iconLikeHover {
+  0% {
+    transform: scale(1.2);
+  }
+  15% {
+    transition: scale(1);
+  }
+  30% {
+    transition: scale(0.9);
+  }
+  45% {
+    transition: scale(0.8);
+  }
+  60% {
+    transform: scale(0.7);
+  }
+  75% {
+    transform: scale(0.8);
+  }
+  90% {
+    transition: scale(0.9);
+  }
+  100% {
+    transition: scale(1);
+  }
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_tags {
+  width: 100%;
+  margin-top: 45px;
+  height: 20px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_tags ul {
+  width: 100%;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_tags ul li {
+  float: left;
+  line-height: 20px;
+  font-size: 10px;
+  font-weight: bolder;
+  margin-right: 5px;
+  border: 1px solid #dddd6e;
+  border-radius: 3px;
+  padding: 0 6px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_tags ul li:last-child {
+  display: none;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_desc {
+  width: 100%;
+  margin-top: 15px;
+  font-size: 13px;
+  line-height: 24px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info {
+  width: 100%;
+  margin-top: 52px;
+  position: relative;
+  height: 53.6px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info > div {
+  float: left;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info .info_text p {
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info .info_text p span {
+  display: inline-block;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info .info_text p span:first-child {
+  width: 50px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info .info_img {
+  position: absolute;
+  right: -10px;
+  top: -28px;
+  width: 100px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_info .info_img img {
+  width: 100%;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_button {
+  margin-top: 36px;
+  width: 100%;
+  max-width: 300px;
+  height: 80px;
+  overflow: visible;
+  padding-top: 2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_button a {
+  display: block;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_button a img {
+  width: 100%;
+  transition: all .3s linear;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_button a:hover img {
+  transform: translateY(5px);
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_taste {
+  width: 100%;
+  margin-top: 88px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_taste h6 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.75em;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_taste p {
+  margin-top: 18px;
+  font-size: 13px;
+  line-height: 24px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_graph {
+  margin: 0 auto;
+  margin-top: 40px;
+  width: 248px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_graph img {
+  width: 100%;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base {
+  width: 100%;
+  margin-top: 71px;
+  padding-bottom: 140px;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul {
+  width: 100%;
+  margin-top: 12px;
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul li {
+  width: 31%;
+  border: 1px solid #5d6666;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 20px;
+  text-align: center;
+  position: relative;
+  opacity: .3;
+  transition: .2s;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul li:nth-of-type(3n) {
+  margin-right: 0;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul li p {
+  font-size: 11px;
+  height: 100%;
+  color: #5d6666;
+  transition: all .3s linear;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul li span {
+  position: absolute;
+  top: -5px;
+  right: .4vw;
+  fill: #dedede;
+  transition: all .3s linear;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul .selected {
+  border: 1px solid #63af8c;
+  opacity: .6;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul .selected > p {
+  color: #63af8c;
+}
+main section .archives .archives_desc .desc_content .desc_inner .inner_base ul .selected > span {
+  fill: #63af8c;
+}
+main section .archives .arch_car {
+  display: none;
+  width: 800px;
+  height: 450px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 20px #5a5a5a;
+}
+main section .archives .arch_car .car_content {
+  padding: 1px 30px 0 30px;
+}

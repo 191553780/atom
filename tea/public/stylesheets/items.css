@@ -1,0 +1,293 @@
+main .box .nav-top .logo {
+  margin: 0 auto;
+  transform: scale(1.56);
+}
+main .box .banner .banner-tab {
+  margin-top: 30px;
+}
+main .box .banner .banner-tab a {
+  color: black;
+}
+main .box .banner .banner-tab a:not(:first-child) {
+  margin-left: 20px;
+}
+main .box section {
+  padding: 30px;
+  margin-top: 20px;
+}
+main .box section .content_brea {
+  margin-bottom: 20px;
+}
+main .box section .content_brea a {
+  color: #999;
+}
+main .box section .content_brea i {
+  color: #dedede;
+}
+main .box section .content_brea span {
+  color: #333;
+}
+main .box section .main_content {
+  zoom: 1;
+  width: 100%;
+}
+main .box section .main_content:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main .box section .main_content .main_content_left,
+main .box section .main_content .main_content_right {
+  float: left;
+  width: 50%;
+}
+main .box section .main_content .main_content_left.main_content_left > img,
+main .box section .main_content .main_content_right.main_content_left > img {
+  width: 100%;
+}
+main .box section .main_content .main_content_left.main_content_left ul,
+main .box section .main_content .main_content_right.main_content_left ul {
+  width: 100%;
+  zoom: 1;
+}
+main .box section .main_content .main_content_left.main_content_left ul:after,
+main .box section .main_content .main_content_right.main_content_left ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main .box section .main_content .main_content_left.main_content_left ul li,
+main .box section .main_content .main_content_right.main_content_left ul li {
+  float: left;
+}
+main .box section .main_content .main_content_left.main_content_left ul li img,
+main .box section .main_content .main_content_right.main_content_left ul li img {
+  width: 79px;
+  height: 79px;
+  margin: 16px 16px 0 0;
+}
+main .box section .main_content .main_content_left.main_content_left ul li:hover,
+main .box section .main_content .main_content_right.main_content_left ul li:hover {
+  opacity: 0.6;
+}
+main .box section .main_content .main_content_left.main_content_right,
+main .box section .main_content .main_content_right.main_content_right {
+  padding-left: 30px;
+}
+main .box section .main_content .main_content_left.main_content_right h2,
+main .box section .main_content .main_content_right.main_content_right h2 {
+  padding-top: 15px;
+  font-size: 24px;
+}
+main .box section .main_content .main_content_left.main_content_right b,
+main .box section .main_content .main_content_right.main_content_right b {
+  padding: 15px 0;
+  font-size: 26px;
+  display: block;
+}
+main .box section .main_content .main_content_left.main_content_right i,
+main .box section .main_content .main_content_right.main_content_right i {
+  margin-right: 5px;
+}
+main .box section .main_content .main_content_left.main_content_right a,
+main .box section .main_content .main_content_right.main_content_right a {
+  font-size: 16px;
+  color: #005ad9;
+}
+main .box section .main_content .main_content_left.main_content_right .g_button,
+main .box section .main_content .main_content_right.main_content_right .g_button {
+  width: 100%;
+  border-radius: 3px;
+  background-color: #005ad9;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  color: white;
+  cursor: pointer;
+  margin: 15px 0;
+}
+main .box section .main_content .main_content_left.main_content_right .g_button:hover,
+main .box section .main_content .main_content_right.main_content_right .g_button:hover {
+  opacity: 0.8;
+}
+main .box section .main_content .main_content_left.main_content_right .favorite,
+main .box section .main_content .main_content_right.main_content_right .favorite {
+  margin-top: 30px;
+}
+main .box section .main_content .main_content_left.main_content_right .favorite a,
+main .box section .main_content .main_content_right.main_content_right .favorite a {
+  display: inline-block;
+  vertical-align: middle;
+  height: 38px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  padding: 0 32px 0 28px;
+  background-color: #fff;
+  text-align: left;
+  line-height: 38px;
+  letter-spacing: 0.03em;
+  color: #666;
+  font-size: 15px;
+  transition: border-color ease 0.2s;
+}
+main .box section .main_content .main_content_left.main_content_right .favorite a:before,
+main .box section .main_content .main_content_right.main_content_right .favorite a:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: -4px 8px 0 0;
+  background-image: url(../images/icon_heart.svg);
+  background-repeat: no-repeat;
+  background-size: 19px;
+  vertical-align: middle;
+}
+main .box section .main_content .main_content_left.main_content_right .favorite span,
+main .box section .main_content .main_content_right.main_content_right .favorite span {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  height: 38px;
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  margin-left: 10px;
+  padding: 0 14px 0 13px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  color: #666;
+}
+main .box section .main_content .main_content_left.main_content_right .favorite span:before,
+main .box section .main_content .main_content_right.main_content_right .favorite span:before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -16px;
+  z-index: 1;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #ccc;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+main .box section .main_content .main_content_left.main_content_right .favorite span:after,
+main .box section .main_content .main_content_right.main_content_right .favorite span:after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -15px;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid #fff;
+  border-bottom: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+main .box section .main_content .main_content_left.main_content_right p,
+main .box section .main_content .main_content_right.main_content_right p {
+  margin: 30px 0;
+}
+main .box section .main_content .main_content_left.main_content_right .inquiry,
+main .box section .main_content .main_content_right.main_content_right .inquiry {
+  margin-top: 40px;
+}
+main .box section .main_content .main_content_left.main_content_right .inquiry a,
+main .box section .main_content .main_content_right.main_content_right .inquiry a {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  line-height: 34px;
+  padding: 0 20px;
+  color: #666;
+  height: 34px;
+  background: #f8f8f8;
+}
+main .box article {
+  padding: 30px;
+  margin-top: 20px;
+}
+main .box article h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+main .box article ul {
+  zoom: 1;
+}
+main .box article ul:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+main .box article ul li {
+  float: left;
+  width: 15%;
+}
+main .box article ul li a {
+  color: black;
+}
+main .box article ul li:not(:last-child) {
+  margin-right: 2%;
+}
+main .box article ul li img {
+  width: 100%;
+}
+main .box article ul li:hover {
+  opacity: 0.6;
+}
+main .box .rede {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+main .box .rede a {
+  color: white;
+  display: inline-block;
+  background: black;
+  border-radius: 4px;
+  width: 240px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+}
+div.Modalframe div.address-frame {
+  transform: translate(-50%, -25%);
+  transition: .1s;
+}
+div.Modalframe div.address-frame div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+div.Modalframe div.address-frame div span {
+  padding: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+div.Modalframe div.address-frame div span:first-child {
+  border-right: 2px solid #eee;
+}
+div.Modalframe div.address-frame div span:hover {
+  opacity: 0.6;
+}
+div.Modalframe div.address-frame div .active {
+  color: #0076d7;
+}
+div.Modalframe div.address-frame ul li {
+  margin-bottom: 24px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+div.Modalframe div.address-frame ul li span {
+  float: right;
+}
+div.Modalframe div.address-frame ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+div.Modalframe div.address-frame .two {
+  display: none;
+}
+div.Modalframe div.address-frame .two img {
+  width: 72px;
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title><%=data[0].name%>| お茶の思い オンラインショップ</title>
+	<link rel="icon" href="images/gwd.png" sizes="16x16">
+	<link rel="stylesheet" href="http://at.alicdn.com/t/font_1085852_7qv1dm6rn2o.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.min.css">
+	<link rel="stylesheet" href="stylesheets/stores.css">
+	<link rel="stylesheet" href="stylesheets/items.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.min.js"></script>
+	<script src="javascripts/jquery-3.3.1.min.js"></script>
+	<script src="javascripts/jquery.mousewheel.min.js"></script>
+</head>
+<body>
+<%function priceSwitch(x) {
+    //强制保留两位小数
+    var f = parseFloat(x);
+    if (isNaN(f)) return false;
+    var f = Math.round(x * 100) / 100;
+    var s = f.toString();
+    var rs = s.indexOf('.');
+    if (rs < 0) {
+        rs = s.length;
+        s += '.';
+    }
+    while (s.length < (rs + 1) + 2) {
+        s += '0';
+    }
+    //每三位用一个逗号隔开
+    var leftNum=s.split(".")[0];
+    var rightNum="."+s.split(".")[1];
+    var result;
+    //定义数组记录截取后的价格
+    var resultArray=new Array();
+    if(leftNum.length>3){
+        var i=true;
+        while (i){
+            resultArray.push(leftNum.slice(-3));
+            leftNum=leftNum.slice(0,leftNum.length-3);
+            if(leftNum.length<4){
+                i=false;
+            }
+        }
+        //由于从后向前截取，所以从最后一个开始遍历并存到一个新的数组，顺序调换
+        var sortArray=new Array();
+        for(var i=resultArray.length-1;i>=0;i--){
+            sortArray.push(resultArray[i]);
+        }
+        result=leftNum+","+sortArray.join(",")+rightNum;
+    }else {
+        result=s;
+    }
+    return result;
+}%>
+	<header>
+		<nav>
+			<div class="search">
+				<i class="iconfont icon-sousuo"></i>
+				<div class="search-text">
+					<input type="text" placeholder="アイテムを検索" >
+					<i class="iconfont icon-sousuo"></i>
+				</div>
+			</div>
+			<div class="nav-right">
+				<div class="login"><span>LOGIN</span>
+					<div class="landing">
+						<a href="javscript:vido(0)" class="landing-1">ログイン</a>
+						<a href="javscript:vido(0)" class="landing-2">新規会員登録</a>
+					</div>
+				</div>
+				<div class="wifi"><i class="iconfont icon-wifi"></i></div>
+				<div class="shopping"><i class="iconfont icon-gouwuche1"></i><span></span></div>
+			</div>	
+		</nav>
+	</header>
+	
+	<main>
+		<div class="box">
+			<div class="nav-top">
+				<!-- logo开始 -->
+					<div class="logo"><a href="/index">
+						<div class="logo_pic">
+							<g class="yuan">
+								<img src="./images/yuan.png" alt="">
+							</g>
+							<g class="content">
+								<div class="left"></div>
+								<div class="cent"></div>
+								<div class="right"></div>
+							</g>
+						</div>
+						<div class="word">
+							<span>お茶の</span><span>思い</span>
+							<p>BELOVED TEA</p>
+						</div>
+					</a></div>
+				<!-- logo结束 -->
+			</div>
+			<div class="banner">
+				<div class="banner-tab">
+					<a href="/stores">HOME</a>
+					<a href="#">ABOUT</a>
+					<a href="#">ITEM</a>
+					<a href="#">CATEGORY</a>
+				</div>
+			</div>
+			<section>
+				<div class="content_brea">
+					<a href="/stores">HOME</a><i class="iconfont icon-right"></i>
+					<a href="#"><%=data[0].type%></a><i class="iconfont icon-right"></i>
+					<span><%=data[0].name%></span>
+				</div>
+				<div class="main_content">
+					<div class="main_content_left">
+						<img src="images/<%=data[0].bigimg%>" alt="">
+						<ul>
+							<li><img src="images/<%=data[0].bigimg%>" alt=""></li>
+							<li><img src="images/arch_taste.jpg" alt=""></li>
+							<li><img src="images/com_cl.png" alt=""></li>
+						</ul>
+					</div>
+					<div class="main_content_right">
+						<h2><%=data[0].name%></h2>
+						<b pir="<%=data[0].price%>">¥<%=priceSwitch(data[0].price)%><span>税込</span></b>
+						<a href="javascript:;" class="landing-3"><i class="iconfont icon-ts"></i>送料についてはこちら</a>
+						<div class="g_button">
+							<span><i class="iconfont icon-gouwuche1"></i>カートに入れる</span>
+						</div>
+						<div class="favorite">
+							<a href="#" class="landing-2">お気に入りに追加</a>
+							<span>1</span>
+						</div>
+						<p><%=data[0].depict%></p>
+						<span>内容量：<%=data[0].capacity%></span>
+						<div class="inquiry">
+							<a href="#"><i class="iconfont icon-youjian"></i>このアイテムについて問い合わせる</a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<article>
+				<h2>その他のアイテム</h2>
+				<ul>
+					<% for(var i=0;i<type.length;i++){ %>
+						<li><a href="/items?name=<%=type[i].name%>&type=<%=type[i].type%>">
+							<img src="images/<%=type[i].img%>" alt="">
+							<p><%=type[i].name%></p>
+							<span><%=priceSwitch(type[i].price)%></span>
+						</a></li>
+					<%}%>
+				</ul>
+			</article>
+			<div class="rede">
+				<a href="/stores">一覧に戻る</a>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-bottom">
+			<div class="left">
+				<span><i class="iconfont icon-youjian"></i></span>
+				<span>
+					<i class="iconfont icon-tishi"></i>
+					<ul class="prompt-box">
+						<li><a href="#">特定商取引に関する表記</a></li>
+						<li><a href="#">利用規約</a></li>
+						<li><a href="#">プライバシーポリシー</a></li>
+					</ul>	
+				</span>
+				<span><i class="iconfont icon-fenxiang"></i>
+					<ul class="prompt-box">
+						<li><p>シェアする</p></li>
+					</ul>
+				</span>
+			</div>
+			<div class="right">
+				<span><i class="iconfont icon-xiangji"></i></span>
+				<a href="/index" target="_blank"><span><i class="iconfont icon-zhu"></i></span></a>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="Separation/stores_frame.js"></script>
+
+	<script src="javascripts/logreg.js"></script>
+	<script src="javascripts/items.js"></script>
+	<script src="javascripts/stores.js"></script>
+</body>
+</html>

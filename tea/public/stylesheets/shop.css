@@ -1,0 +1,160 @@
+*{margin:0;padding:0;}
+@font-face {font-family: YuMinchoMedium;src:url('../fonts/YuMinchoMedium.otf');}
+@font-face {font-family: ZuiXiangSuEX2;src:url('../fonts/ZaoZiGongFangDianHeiChao.otf');}
+@font-face {font-family: CrimsonText;src:url('../fonts/CrimsonText-Semibold-webfont.woff.ttf');}
+
+
+.main_container{width:100%;min-height:4000px;}
+#boxone{width:75%;height:232px;margin:0 auto;}
+.oneInner_content{width:100%;height:232px;position:relative;margin:0 auto;}
+.titleLeft{width:35.5%;height:232px;float:left;min-width:240px;}
+.oneLeft_content{width:290px;height:100%;top:140px;margin:0 auto;position:absolute;}
+.oneLeft_content>p{font-size:16px;letter-spacing:.04em;}
+.titlewords{display:inline-block;position:relative;}
+.titlewords>div{float:left;font-family:YuMinchoMedium,Arial!important;font-size:34px;font-weight:300;letter-spacing:.1em;transition:1s ease;transform:translateX(-15px);opacity:0;}
+.oneLeft_content>h3>div{float:left;font-family:Arial!important;font-weight:300;;transition: .35s ease;transform: translateX(-5px);opacity: 0;letter-spacing: 0px;}
+.smallwords{font-size:14px;font-weight:400;line-height:30px;letter-spacing:.12em;color:#101820;font-family: arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,"メイリオ",sans-serif;}
+.title_border{width:1px;height:0;position:absolute;left:35%;display:inline-block;border-right: 1px solid #5d6666;transition: 1s ease-out;}
+.titleRight{width:64%;float:right;padding-top:150px;padding-left:6.5%;}
+.titleRight>p{opacity:0;transform:translateY(-20px);transition:1s;}
+
+
+#boxtwo{padding-top:70px;position:relative;}
+/*第一块内容*/
+/*.twoInner_content{width:75%;margin:0 auto;}*/
+.boxtwo_onecontent{width:100%;height:auto;display:flex;min-height: 350px;margin-bottom: 60px;opacity:0;transform:translateY(20px);transition:1s;}
+.twoLeft{width:39%;height:100%;position:relative;padding-top:70px;float:left;z-index:20;}
+.twoLeft_onecontent{width:460px;height:100%;position:absolute;right:-140px;display:inline-block;}
+/*.twoLeft_onetitle{margin-bottom:52px;}*/
+.backtitle{font-weight:400;font-size:32px;display:inline-block;font-family:宋体,serif;letter-spacing:.1em;}
+.greentitle{font-size:45px;color:#c1cb81;font-weight:400;font-family:宋体;}
+.twoLeft_onetitle>p{font-size:16px;margin-top:10px;margin-bottom:52px;font-family:"凸版文久明朝 R","Yu Mincho Medium","游明朝 Medium",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho Pro W3",serif;}
+.cross_border{width:100%;height:1px;display:inline-block;border-top: 1px solid #5d6666;}
+/*.twoLeft_onemessage>table{margin-bottom:28px;}*/
+.th{padding:4px 20px 4px 0;font-weight:bolder;}
+.one_buttom{width:260px;}
+.one_innerbuttom{width:100%;text-align:center;position:relative;}
+.one_innerbuttom>a{display:block;text-decoration:none;border:1px solid #5d6666;border-radius:6px;padding:18px;margin:40px 0 2px 0;margin-bottom:20px;color:#5d6666;font-family:arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,"メイリオ",sans-serif;font-size:14px;line-height:14px;}
+.one_innerbuttom>a::after{content:"";display:block;width:98%;margin:0 1%;border-bottom:1px dotted #5d6666;transition:all .1s;position:absolute;bottom:-5px;left:0%;}
+.one_innerbuttom:hover>a::after{width:0;left:50%;}
+.one_innerbuttom:hover{bottom:-5px;}
+.twoRight{width:60%;height:100%;float:right;}
+.twoRight>img{width:100%;}
+
+/*第二块内容*/
+.boxtwo_twocontent{width:75%;height:100%;margin-top:60px;margin:0 auto;opacity:0;transform:translateY(20px);transition:1s;}
+#twoLeft_map{width:60%;height:300px;display:inline-block;background:pink;}
+.twoRight_twomessage{width:36%;padding-left:60px;padding-top:40px;height:100%;display:inline-block;padding:40px 0 0 60px;}
+#boxtwo .twoRight_twomessage .one_buttom{margin:0 auto;}
+.amap>a{display:inline-block;text-decoration:underline!important;margin-top:10px;font:14px/10px arial;font-weight:700;line-height:2.2em;color:#63af8c;letter-spacing:2px;}
+.amap>a:hover{color:#c1cb81!important;}
+/*.two_buttom{width:100%;border-bottom:1px dotted #5d6666;}*/
+.ssmall{text-align:center;}
+.ssmal>small{color:#101820;line-height:1.4em;font-size:14px;font-family:arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,"メイリオ",sans-serif;}
+
+/*第三块内容*/
+.boxtwo_threecontent{margin:0 auto;padding-top:125px;font-family:"凸版文久明朝 R","Yu Mincho Medium","游明朝 Medium",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho Pro W3",serif;}
+.boxtwo_threemessage{width:75%;margin:0 auto;position:relative;}
+.twotitle_border{width:1px;height:0;display:inline-block;border-right:1px solid #5d6666;transition: 1s ease-out;}
+.boxtwo_threeLeft{padding-right:10%;float:left;font-size:40px!important;opacity:0;transform:translateX(20px);transition:1s;}
+.boxtwo_threeLeft>span{font-size:42px;}
+.boxtwo_threeLeft>h3{font-size:38px;}
+.boxtwo_threeRight{width:50%;display:inline-block;vertical-align:top;padding-left:60px;opacity:0;transform:translateX(-20px);transition:1s;}
+.boxtwo_threeRight>p{top:-40px;font-size:24px;line-height:38px;font-weight:400;}
+.twoimg{width:100%;z-index:-1;position:relative;top:-60px;overflow:hidden;}
+.twoimg>img{width:100%;vertical-align:middle;opacity:0;transform:scale(1.2);transition:1s ease;}
+.boxtwo_undertext{width:100%;z-index:10;text-align:center;color:#5d6666;}
+.boxtwo_undertext>h4{margin:0 auto;margin:40px auto 60px;opacity:0;transform:translateY(-30px);transition:2s;font-size:30px;line-height:38px;letter-spacing:.08em!important;font-family:"YuMinchoMedium";}
+
+#boxthree{width:100%;height:100%;min-height:2300px;}
+.boxthree_content{width:75%;min-height:2300px;margin:0 auto;padding:100px 0px;position:relative;}
+.boxthree_content::before{z-index:-1;content:"";display:block;width:1px;height:100%;min-height:1700px;background-color:#dedede;position:absolute;left:50%;top:0;}
+
+#year1970{width:100%;height:100%;min-height:400px;margin:0 auto;position:relative;}
+.history1{width:52%;float:left;z-index:-1;position:absolute;}
+.history1 p{top:-70px;z-index:10;position:absolute;right:1.5%;}
+
+.year{font-size:70px;color:#c1cb81;font-family:"CrimsonText";font-weight:500;margin:0 30px;}
+.greendot{width:12px;height:12px;display:inline-block;border-radius:100%;box-sizing:content-box;background-color:#c1cb81;border:6px solid #ecefd9;}
+
+#year1970>.history1>.historyimg1{left:-17%;position:relative;opacity:0;transform:scale(1.2);transition:1s ease;}
+.historyimg1>img{width:100%;}
+.history_detail1{width:43%;height:100%;margin-top:3.5%;position:relative;transform:translateX(-60px);transition-delay:.5s;transition:1s ease;opacity:0;}
+.history_detail1::after{z-index:20;content:"";clear:both;position:absolute;display:inline-block;height:1px;width:391px;right:55%;top:13%;bottom:0;background-color:#5d6666;}
+.history_detail1{float:right;}
+.history_title{font-size:24px;line-height:32px;font-weight:400;font-family:"凸版文久明朝 R","Yu Mincho Medium","游明朝 Medium",YuMincho,"ヒラギノ明朝 Pro W3","Hiragino Mincho Pro W3",serif;
+padding-bottom:10px;margin-bottom:25px;}
+
+.history_detail1>p{text-align:left;line-height:30px;}
+/*.history_detail::after{content:"";display:block;width:1px;height:85px;position:absolute;top:-55px;left:-5%;background-color:#5d6666;}*/
+
+#year1973{width:100%;margin:0 auto;height:100%;position:relative;}
+.yeardot1{position:absolute;padding-right:4.4%;font-family:"CrimsonText";}
+.history2>p{right:49.6%;}
+.year1{font-size:30px;color:#5d6666;}
+.graydot{display:inline-block;z-index:99;position:absolute;top:50%;width:8px;height:8px;border-radius:4px;background-color:#dedede;position:absolute;right:0;}
+.dash{display:inline-block;width:25px;height:1px;border-bottom:1px dotted #5d6666;margin-left:15px;}
+.year1_text{position:static;width:43%;padding-top:60px;padding-bottom:50px;padding-right:0;}
+.year1_text>p{font-size:14px;line-height:30px;transition-delay:.2s;letter-spacing:.12em;font-family:arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,"メイリオ",sans-serif;}
+
+#year1975{width:100%;max-height:300px;margin:0 auto;height:500px;position:relative;}
+.history3{width:42%;float:right;position:relative;}
+.history3>p{top:-70px;z-index:10;position:absolute;left:-21.5%;}
+.history3>p>.year{font-size:60px!important;}
+.history_detail3{padding-left:13%;}
+.history_detail3>h5::after{content:"";clear:both;z-index:20;position:absolute;display:inline-block;width:1px;height:85px;top:60%;left:6%;background-color: #5d6666;}
+.historyimg3{position:relative;margin-bottom:10px;opacity:0;transform:scale(1.2);transition:1.5s ease;}
+.historyimg3>img{width:100%;z-index:-99;}
+.history_detail3>.history_title{margin-bottom:13px;}
+
+#year1980{width:100%;max-height:300px;margin:0 auto;height:500px;position:relative;}
+#year1980>.history4{width:52%;right:50%;position:absolute;margin-top:-10px;}
+#year1980>.history4>p{right:-3%;position:absolute;z-index:20;top:-70px;}
+.history4>p>.year{font-size:60px!important;}
+.history4>.history_detail4{padding:0 13%;width:82%;}
+.historyimg4{position:relative;margin-bottom:10px;padding-right:13%;opacity:0;transform:scale(1.2);transition:1.5s ease;}
+.historyimg4>img{width:100%;z-index:-99;}
+.history_detail4>h5::after{content:"";clear:both;z-index:20;position:absolute;display:inline-block;width:1px;height:85px;top:53%;left:24px;background-color: #5d6666;}
+#year1980>.history4>.history_detail4>h5{margin-bottom:12px;}
+
+#year1985{width:100%;min-height:170px;position:relative;margin-top:10%;transform:translateX(30px);transition:1s ease;opacity:0;}
+.history5{float:right;}
+.revyeardot1{left:49.7%;position:absolute;padding-left:4.7%;}
+.revyear1{font-size:30px;color:#5d6666;font-family:"CrimsonText";}
+.revgraydot{display:inline-block;z-index:99;top:50%;left:0;position:absolute;width:8px;height:8px;border-radius:4px;background-color:#dedede;}
+.revdash{display:inline-block;width:25px;height:1px;border-bottom:1px dotted #5d6666;margin-right:15px;}
+.revyear1_text{padding-top:60px;padding-bottom:50px;padding-right:0;}
+.revyear1_text>p{font-size:14px;line-height:30px;transition-delay:.2s;letter-spacing:.12em;font-family:arial,"Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN",Meiryo,"メイリオ",sans-serif;}
+/*.history5>p{left:0;}*/
+
+#year1996{width:100%;min-height:170px;margin-top:-5%;transition-delay:.5s;transform:translateX(-30px);transition:1s ease;opacity:0;}
+
+#year2000{min-height:313px;margin-top:3.5%;position:relative;opacity:0;transform:translateY(30px);transition:1s;}
+#year2000>.history1{float:right;}
+#year2000>.history1>.historyimg1{left:106%;position:relative;}
+#year2000>.history1>p{top:-70px;z-index:10;position:absolute;right:-34.7%;}
+#year2000>.history_detail1{float:left;z-index:30;text-align:right;}
+#year2000>.history_detail1>p{text-align:right;}
+#year2000>.history_detail1::after{left:50%;top:30%;}
+
+#year2002{min-height:140px;margin-top:4.5%;transform:translateX(-30px);transition:1s ease;opacity:0;}
+#year2016{min-height:140px;transition-delay:.5s;transform:translateX(30px);transition:1s ease;opacity:0;}
+
+
+
+/*第四块内容*/
+#boxfour{width:100%;border-top:1px solid #dedede;min-height:670px;}
+.fourInner_content{width:75%;height:100%;margin:0 auto;}
+.company{width:50%;height:100%;float:left;padding:70px 0;padding-right:60px;}
+.boxfour_title{font-family:YuMinchoMedium;font-size:24px;padding-bottom:50px;font-weight:400;}
+.td{padding:5px 50px 30px 0;font-weight:bolder;vertical-align:top;}
+.tk{line-height:30px;vertical-align:top;}
+/*#three_buttom{width:100%;padding-top:25px;}*/
+.left_buttom{width:48%;float:left;margin-right:2%;position:relative;}
+.right_buttom{width:48%;float:right;position:relative;}
+
+
+.personal{width:50%;height:100%;float:right;padding:70px 0;padding-left:60px;}
+.personal_text{overflow-y:scroll;box-sizing:border-box;padding-right:50px;max-height:440px;}
+.personal_text>h5{color:#101820;font-size:14px;font-weight:700;line-height:30px;position:relative;margin-bottom:15px;}
+.dotted{width:100%;height:1px;border-bottom:1px dotted #5d6666;left:0;bottom:-5px;position:absolute;}
